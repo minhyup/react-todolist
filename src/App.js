@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <span>test update</span>
+      <span>test updateeee</span>
     </div>
   );
 }
