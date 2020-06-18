@@ -4,6 +4,7 @@ import TodoItem from './TodoItem';
 
 const TodoListBlock = styled.div`
   /* flex: 1; ?? flex의 item이 갖고 있는 속성으로써 너비 증가율을 나타냄*/
+  flex: 1;
   padding: 12px 24px;
   overflow-y: auto;
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import TodoTemplate from './layouts/TodoTemplate';
 import TodoHead from './components/TodoHead';
 import TodoList from './components/TodoList';
@@ -9,9 +9,20 @@ const GlobalStyle = createGlobalStyle`
   body{background: #e9fac8;}
 `;
 
-// const GlobalStyleDiv = styled.div`
-//   background: #e9fac8;
+// const Test = styled.div`
+//   width: 300px;
+//   margin: 0 auto;
+//   background: tomato;
 // `;
+
+// const TestChild = styled.div`
+//   width: 50%;
+//   margin: 0 auto;
+//   background: yellow;
+// `;
+// <Test>
+// <TestChild>test</TestChild>
+// </Test>
 
 function App() {
   return (
