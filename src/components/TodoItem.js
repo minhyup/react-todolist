@@ -56,11 +56,11 @@ const Text = styled.div`
     `}
 `;
 
-function TodoItem({ done }) {
+function TodoItem({ id, text, done }) {
   return (
     <TodoItemBlock>
       <CheckCicle done={done}>{done && <MdDone />}</CheckCicle>
-      <Text done={done}>텍스트</Text>
+      <Text done={done}>{text}</Text>
       <Remove>
         <MdDelete />
       </Remove>
