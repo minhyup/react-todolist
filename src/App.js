@@ -1,45 +1,38 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
-import TodoTemplate from './layouts/TodoTemplate';
-import TodoHead from './components/TodoHead';
-import TodoList from './components/TodoList';
-import TodoCreate from './components/TodoCreate';
-import { TodoProvider } from './context/TodoContext';
-
-const GlobalStyle = createGlobalStyle`
-  body{background: #e9fac8;}
-`;
-
-// const Test = styled.div`
-//   width: 300px;
-//   margin: 0 auto;
-//   background: tomato;
-// `;
-
-// const TestChild = styled.div`
-//   width: 50%;
-//   margin: 0 auto;
-//   background: yellow;
-// `;
-// <Test>
-// <TestChild>test</TestChild>
-// </Test>
+import Users from './components/Users';
+import { UsersProvider } from './context/UsersContext';
 
 function App() {
   return (
-    <TodoProvider>
-      <GlobalStyle />
-      <TodoTemplate>
-        <TodoHead />
-        <TodoList />
-        <TodoCreate />
-      </TodoTemplate>
-    </TodoProvider>
+    <UsersProvider>
+      <Users />
+    </UsersProvider>
   );
 }
 
 export default App;
 
+//! Todo
+// import { createGlobalStyle } from 'styled-components';
+// import TodoTemplate from './layouts/TodoTemplate';
+// import TodoHead from './components/TodoHead';
+// import TodoList from './components/TodoList';
+// import TodoCreate from './components/TodoCreate';
+// import { TodoProvider } from './context/TodoContext';
+
+// const GlobalStyle = createGlobalStyle`
+//   body{background: #e9fac8;}
+// `;
+/* <TodoProvider>
+<GlobalStyle />
+<TodoTemplate>
+  <TodoHead />
+  <TodoList />
+  <TodoCreate />
+</TodoTemplate>
+</TodoProvider> */
+
+//! test
 // const FloatContainer = styled.div`
 //   display: flex;
 //   justify-content: center;
